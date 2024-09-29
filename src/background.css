@@ -1,0 +1,6 @@
+.background {
+  background: url(src/img/backhome.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  margin: -0.5rem -0.5rem 2.4rem;
+}

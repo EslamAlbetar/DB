@@ -1,0 +1,132 @@
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.logo_name {
+  font-size: 1.8rem;
+  font-family: var(--logoFont);
+  margin-right: 2%;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.list ul {
+  display: flex;
+  list-style: none;
+  gap: 0.7rem;
+  flex-direction: row-reverse;
+}
+
+.list ul a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.1s ease;
+  background: #38373788;
+  color: rgb(255, 255, 255);
+  &:hover {
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.btn_nav {
+  margin-right: 3%;
+}
+
+.btn_item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 0.7rem;
+}
+
+.btn_item nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  padding: 0.6rem;
+  border-radius: 50%;
+  border-radius: 4rem;
+  transition: all 0.2s ease;
+  background: #38373788;
+  color: #ffffffc9;
+  &:hover {
+    background: #cc7109;
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.icon_nav {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .nav_bar {
+    position: relative;
+  }
+  .list ul {
+    position: absolute;
+    top: -0.5rem;
+    left: 7rem;
+    gap: 0.3rem;
+  }
+  .list ul a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: right;
+  }
+
+  .btn_nav {
+    position: absolute;
+    top: -0.5rem;
+    left: -2rem;
+  }
+  .btn_item nav.tow {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .list ul {
+    position: absolute;
+    top: -0.5rem;
+    left: 1rem;
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .list ul {
+    left: 1rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .list ul {
+    left: 1.5rem;
+  }
+
+  .btn_nav {
+    left: -1.5rem;
+  }
+}
